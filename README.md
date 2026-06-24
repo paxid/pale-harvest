@@ -23,7 +23,7 @@ world) is generated in code.
 |-----|--------|
 | WASD / arrows | walk |
 | Mouse | look |
-| Shift | sprint (watch the stamina bar) |
+| Shift | sprint — hold to run (no stamina limit) |
 | E | interact / close notes |
 | F | flashlight |
 | Tab | journal (re-read anything you've found) |
