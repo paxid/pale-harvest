@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PALE HARVEST</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="viewport">
+  <canvas id="game"></canvas>
+  <canvas id="staticfx"></canvas>
+  <div id="scanlines"></div>
+  <div id="vignette"></div>
+
+  <div id="hud">
+    <div id="objective"></div>
+    <div id="toast"></div>
+    <div id="prompt"></div>
+    <div id="inventory"></div>
+  </div>
+
+  <div id="noteview" class="hidden">
+    <div id="notepaper">
+      <div id="notetitle"></div>
+      <div id="notebody"></div>
+      <div class="notehint">[ E ] put it down</div>
+    </div>
+  </div>
+
+  <div id="journal" class="hidden">
+    <div id="journalpanel">
+      <div class="jtitle">WHAT YOU HAVE FOUND</div>
+      <div id="journallist"></div>
+      <div class="notehint">[ TAB ] close · click an entry to read</div>
+    </div>
+  </div>
+
+  <div id="jumpscare" class="hidden"><canvas id="scareface"></canvas></div>
+  <div id="fade"></div>
+  <div id="deathtext" class="hidden"></div>
+
+  <div id="screen-intro" class="screen hidden"></div>
+
+  <div id="screen-outro" class="screen hidden">
+    <div id="outrotext"></div>
+  </div>
+
+  <div id="screen-title" class="screen">
+    <div class="ttl-small">HALE FARM · CALE COUNTY · 1986</div>
+    <h1>PALE<br>HARVEST</h1>
+    <div class="controls">
+      WASD move &nbsp;·&nbsp; MOUSE look &nbsp;·&nbsp; SHIFT run<br>
+      E interact &nbsp;·&nbsp; F flashlight &nbsp;·&nbsp; TAB journal
+    </div>
+    <div class="hint blink">[ CLICK TO BEGIN ]</div>
+    <div class="ttl-foot">headphones recommended &nbsp;·&nbsp; a low-poly nightmare</div>
+  </div>
+
+  <div id="paused" class="hidden">
+    <div>PAUSED</div>
+    <div class="hint">[ CLICK TO RESUME ]</div>
+    <div id="volrow">VOLUME <input id="vol" type="range" min="0" max="100" value="55"></div>
+  </div>
+
+  <div id="errmsg" class="hidden">
+    COULD NOT LOAD THE 3D ENGINE.<br>
+    This game needs an internet connection the first time it opens<br>
+    (it fetches three.js from a CDN). Check your connection and reload.
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="js/story.js"></script>
+<script src="js/textures.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/player.js"></script>
+<script src="js/entity.js"></script>
+<script src="js/world.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
