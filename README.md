@@ -8,7 +8,9 @@ Tonight is the third night.
 
 ## How to play
 
-Just double-click `index.html` (Chrome or Edge recommended).
+**▶ Play it now in your browser: https://paxid.github.io/pale-harvest/**
+
+Or run it locally — just double-click `index.html` (Chrome or Edge recommended).
 You need an internet connection the first time — the page pulls the three.js
 engine and two fonts from a CDN. Everything else (textures, sounds, the whole
 world) is generated in code.
